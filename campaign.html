@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Al-Hasan Campaign</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <link href="img/favicon.ico" rel="icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    
+    <style>
+        /* Ini untuk menyembunyikan dekorasi jika class section-title masih tersisa di tempat lain */
+        .section-title::before,
+        .section-title::after {
+            display: none !important;
+            content: none !important;
+        }
+
+        /* Style Khusus Banner Campaign */
+        .campaign-banner {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/SOSMED\ ALHASAN\ \(1\).png'); 
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 15px;
+            padding: 100px 20px;
+            color: white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        /* Tambahan style agar link tahun terlihat lebih rapi */
+        .list-group-item-action:hover {
+            background-color: #f8f9fa;
+            transform: translateX(5px);
+            transition: all 0.3s ease;
+        }
+
+        /* Style tambahan untuk video lokal agar rapi */
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            background-color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid bg-secondary top-bar wow fadeIn" data-wow-delay="0.1s">
+        <div class="row align-items-center h-100">
+            <div class="col-lg-4 text-center text-lg-start">
+                <a href="index.html">
+                    <h1 class="display-5 text-primary m-0">Al-Hasan</h1>
+                </a>
+            </div>
+            <div class="col-lg-8 d-none d-lg-block">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="d-flex justify-content-end">
+                            <div class="flex-shrink-0 btn-square bg-primary">
+                                <i class="fa fa-phone-alt text-dark"></i>
+                            </div>
+                            <div class="ms-2">
+                                <h6 class="text-primary mb-0">Call Us</h6>
+                                <span class="text-white">0813-2440-0048</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="d-flex justify-content-end">
+                            <div class="flex-shrink-0 btn-square bg-primary">
+                                <i class="fa fa-envelope-open text-dark"></i>
+                            </div>
+                            <div class="ms-2">
+                                <h6 class="text-primary mb-0">Mail Us</h6>
+                                <span class="text-white">alhasan@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="d-flex justify-content-end">
+                            <div class="flex-shrink-0 btn-square bg-primary">
+                                <i class="fa fa-map-marker-alt text-dark"></i>
+                            </div>
+                            <div class="ms-2">
+                                <h6 class="text-primary mb-0">Address</h6>
+                                <span class="text-white">Karah Agung I No.9, Surabaya</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-secondary px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="nav-bar">
+            <nav class="navbar navbar-expand-lg bg-primary navbar-dark px-4 py-lg-0">
+                <h4 class="d-lg-none m-0">Menu</h4>
+                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav me-auto">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Service</a>
+                        <a href="donation.html" class="nav-item nav-link">Donation</a>
+                        <div class="nav-item dropdown">
+                            <a href="#!" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu bg-light m-0">
+                                <a href="event.html" class="dropdown-item">Event</a>
+                                <a href="team.html" class="dropdown-item">Our Team</a>
+                                <a href="testimonial.html" class="dropdown-item">Santri Inspiratif</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link active">Campaign</a>
+                    </div>
+                    <div class="d-none d-lg-flex ms-auto">
+                        <a class="btn btn-square btn-dark ms-2" href="#"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-square btn-dark ms-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-dark ms-2" href="#"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-dark ms-2" href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid page-header py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center py-4">
+            <h1 class="display-3 animated slideInDown">Campaign</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="event.html">Pages</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Campaign</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    
+    <div class="container py-5">
+
+        <div class="mb-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="campaign-banner text-center d-flex flex-column justify-content-center align-items-center">
+                <h1 class="display-4 fw-bold text-white mb-3">Tasyakuran ke-4 Panti Asuhan Al-Hasan</h1>
+                <p class="fs-4 text-white mb-0 w-75">Mensyukuri perjalanan 4 tahun penuh kasih, ilmu, dan harapan bagi anak-anak kami.</p>
+            </div>
+        </div>
+        
+        <div class="mb-5">
+            <h3 class="fw-bold text-start mb-4">Perjalanan 4 Tahun</h3>
+            <p class="text-muted mb-3"><small><em>Klik pada tahun untuk melihat detail:</em></small></p>
+            
+            <div class="list-group list-group-flush">
+                <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center py-3">
+                    <div>
+                        <strong class="text-primary fs-5">2021:</strong> 
+                        <span class="ms-2">Panti mulai beroperasi dan menerima anak asuh pertama.</span>
+                    </div>
+                    <i class="fa fa-chevron-right text-muted small"></i>
+                </a>
+
+                <a href="https://www.instagram.com/p/DRPbgUrk_qw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center py-3">
+                    <div>
+                        <strong class="text-primary fs-5">2022:</strong> 
+                        <span class="ms-2">Mulai Mengembangkan Kegiatan Pendidikan.</span>
+                    </div>
+                    <i class="fa fa-chevron-right text-muted small"></i>
+                </a>
+
+                <a href="https://www.tiktok.com/@pantialhasan.sby/video/7574671084042177813?is_from_webapp=1&sender_device=pc&web_id=7482695661508265479" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center py-3">
+                    <div>
+                        <strong class="text-primary fs-5">2023:</strong> 
+                        <span class="ms-2">Renovasi ruang tidur & area belajar dari hasil donasi masyarakat.</span>
+                    </div>
+                    <i class="fa fa-chevron-right text-muted small"></i>
+                </a>
+
+                <a href="event.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center py-3">
+                    <div>
+                        <strong class="text-primary fs-5">2024:</strong> 
+                        <span class="ms-2">Berbagai kolaborasi dengan komunitas lokal & event sosial.</span>
+                    </div>
+                    <i class="fa fa-chevron-right text-muted small"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="mb-5">
+            <h3 class="fw-bold text-start mb-4">Wish Anak-anak</h3>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="donation-item p-4 text-center">
+                        <img src="img/lunch box.jpg" class="img-fluid mb-3" alt="Wish 1">
+                        <h5 class="fw-bold">Lunch Box</h5>
+                        <p> Saat kegiatan luar panti, sekolah, atau belajar bersama, anak-anak sering membawa makanan dari dapur.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="donation-item p-4 text-center">
+                        <img src="img/buku cerita.jpg" class="img-fluid mb-3" alt="Wish 2">
+                        <h5 class="fw-bold">Buku</h5>
+                        <p> Beberapa anak sedang semangat belajar IPA dan ingin tahu lebih banyak tentang dunia.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="donation-item p-4 text-center">
+                        <img src="img/rak buku.jpg" class="img-fluid mb-3" alt="Wish 3">
+                        <h5 class="fw-bold">Rak Buku Sederhana</h5>
+                        <p>Anak-anak mulai suka membaca bersama setiap malam, tetapi buku-buku mereka menumpuk di pojok kamar.</p>
+                    </div>
+                </div>
+                 <div class="col-md-4">
+                    <div class="donation-item p-4 text-center">
+                        <img src="img/makan bareng.jpg" class="img-fluid mb-3" alt="Wish 4">
+                        <h5 class="fw-bold">Memasak Bersama untuk Tasyakuran</h5>
+                        <p>Bagi mereka, ini bukan hanya memasak, tapi momen untuk belajar bekerja sama dan merayakan syukur dengan hasil tangan sendiri.</p>
+                    </div>
+                </div>
+                 <div class="col-md-4">
+                    <div class="donation-item p-4 text-center">
+                        <img src="img/public speaking.jpg" class="img-fluid mb-3" alt="Wish 5">
+                        <h5 class="fw-bold">Pelatihan Public Speaking</h5>
+                        <p>Mereka ingin belajar berbicara dengan percaya diri agar berani tampil saat kegiatan panti.</p>
+                    </div>
+                </div>
+                 <div class="col-md-4">
+                    <div class="donation-item p-4 text-center">
+                        <img src="img/gambar.jpg" class="img-fluid mb-3" alt="Wish 6">
+                        <h5 class="fw-bold">Perlengkapan Menggambar</h5>
+                        <p> Mereka ingin belajar teknik sederhana agar gambarnya bisa semakin bagus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-5">
+            <h3 class="fw-bold text-start mb-4">Video Perkembangan</h3>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="ratio ratio-16x9">
+                        <video controls>
+                            <source src="video/video1.mp4" type="video/mp4">
+                            Browser Anda tidak mendukung tag video.
+                        </video>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="ratio ratio-16x9">
+                        <video controls>
+                            <source src="video/video2.mp4" type="video/mp4">
+                            Browser Anda tidak mendukung tag video.
+                        </video>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="ratio ratio-16x9">
+                        <video controls>
+                            <source src="video/video3.mp4" type="video/mp4">
+                            Browser Anda tidak mendukung tag video.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-5">
+            <h3 class="fw-bold text-start mb-4">Progress Tasyakuran</h3>
+            <div class="progress donation-item" style="height: 20px;">
+                <div class="progress-bar bg-success fw-bold" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                    65%
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-5">
+            <h3 class="fw-bold text-start mb-4">Terima Kasih #OrangBaik</h3>
+            <p class="text-muted mb-4">Apresiasi setinggi-tingginya kepada para donatur yang telah berbagi kebahagiaan:</p>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="bg-light p-4 rounded text-center shadow-sm h-100 border border-2 border-warning">
+                        <div class="mb-3">
+                            <i class="fa fa-trophy fa-3x text-warning"></i>
+                        </div>
+                        <h5 class="fw-bold mb-1">Mr Yang</h5>
+                        <p class="text-warning fw-bold fs-5 mb-2">Rp 2.000.000</p>
+                        <p class="small text-muted fst-italic">"Semoga menjadi amal jariyah untuk keluarga kami."</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="bg-light p-4 rounded text-center shadow-sm h-100 border border-2 border-secondary">
+                        <div class="mb-3">
+                            <i class="fa fa-trophy fa-3x text-secondary"></i>
+                        </div>
+                        <h5 class="fw-bold mb-1">Ibu Bulan</h5>
+                        <p class="text-secondary fw-bold fs-5 mb-2">Rp 1.500.000</p>
+                        <p class="small text-muted fst-italic">"Sukses terus untuk adik-adik Al-Hasan."</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="bg-light p-4 rounded text-center shadow-sm h-100" style="border: 2px solid #cd7f32;">
+                        <div class="mb-3">
+                            <i class="fa fa-trophy fa-3x" style="color: #cd7f32;"></i>
+                        </div>
+                        <h5 class="fw-bold mb-1">Keluarga Pak Budi</h5>
+                        <p class="fw-bold fs-5 mb-2" style="color: #cd7f32;">Rp 1.000.000</p>
+                        <p class="small text-muted fst-italic">"Sedikit rezeki untuk masa depan yang cerah."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-5">
+            <h3 class="fw-bold text-start mb-4">Komentar & Donasi</h3>
+            
+            <form action="https://formsubmit.co/alhasansurabaya@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="New Contact Message!">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Nama Anda" required>
+                            <label for="name">Nama Anda</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input type="email" name="email" class="form-control" id="email" placeholder="Email Anda" required>
+                            <label for="email">Email Anda</label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-floating">
+                            <input type="text" name="subject" class="form-control" id="subject" placeholder="Subjek">
+                            <label for="subject">Subjek (Opsional)</label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-floating">
+                            <textarea name="message" class="form-control" placeholder="Tulis pesan disini" id="message" style="height: 200px" required></textarea>
+                            <label for="message">Komentar atau Harapan untuk Anak-anak</label>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12">
+                        <button class="btn btn-primary py-3 px-4 me-2" type="submit">Kirim Pesan</button>
+                        
+                        <button class="btn btn-secondary py-3 px-4" type="button" data-bs-toggle="modal" data-bs-target="#qrModal">Donasi</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="modal fade" id="qrModal" tabindex="-1" aria-labelledby="qrModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-primary" id="qrModalLabel">Scan QR Code Donasi</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <p class="mb-3">Silakan scan kode di bawah ini untuk berdonasi:</p>
+                        
+                        <img src="img/SOSMED ALHASAN 1.png" class="img-fluid border border-2 border-primary rounded" alt="QR Code Donasi" style="max-width: 300px;">
+                        
+                        <p class="mt-3 text-muted small">Yayasan Panti Asuhan Al-Hasan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row g-5 py-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Our Office</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Karah Agung I No.9, Surabaya</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>0813-2440-0048</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>alhasan@gmail.com</p>
+                    <div class="d-flex pt-3">
+                        <a class="btn btn-square btn-primary me-2" href="#"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-square btn-primary me-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-primary me-2" href="#"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-primary me-2" href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="service.html">Our Services</a>
+                    <a class="btn btn-link" href="event.html">News</a>
+                    <a class="btn btn-link" href="donation.html">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Opening Hours</h4>
+                    <p>Monday - Sunday</p>
+                    <h6 class="text-light">09:00 - 22:00</h6>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Gallery</h4>
+                    <div class="row g-2">
+                        <div class="col-4">
+                            <img class="img-fluid w-100" src="img/al hasan bali.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid w-100" src="img/al hasan di masjid.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid w-100" src="img/al hasan fotbar hitam.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright pt-5">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="fw-semi-bold" href="index.html">Panti Asuhan Al-Hasan</a>, All Right
+                        Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        Designed By <a class="fw-semi-bold" href="index.html">Kelompok 4</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#!" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

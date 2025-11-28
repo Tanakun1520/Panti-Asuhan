@@ -887,6 +887,38 @@
     </div>
     <!-- Footer End -->
 
+    <!-- POP-UP MODAL START -->
+<div class="modal fade" id="campaignModal" tabindex="-1" aria-labelledby="campaignModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      
+      <!-- HEADER -->
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="campaignModalLabel">Join Our Community Campaign!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      
+      <!-- BODY: Bisa taruh gambar dan info -->
+      <div class="modal-body text-center">
+        <img src="img/FB SEJARAH 1.png" alt="Campaign Poster" class="img-fluid mb-3" style="max-height:400px;">
+        <p>Be part of our exciting community engagement event! Click below to learn more.</p>
+        <a href="campaign.html" class="btn btn-primary">Learn More</a>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!-- POP-UP MODAL END -->
+
+<!-- SCRIPT: Agar modal muncul otomatis saat halaman dibuka -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var campaignModal = new bootstrap.Modal(document.getElementById('campaignModal'));
+    campaignModal.show();
+  });
+</script>
+
+
 
     <!-- Back to Top -->
     <a href="#!" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
